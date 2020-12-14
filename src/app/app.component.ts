@@ -8,8 +8,12 @@
   export class AppComponent {
     title = 'orbit-report';
   }
-  let  sourceList: Satallite[]; [
-    constructor() {
+   export class sourceList {
+     
+     sourceList: Satallite[]; 
+
+    constructor (sourceList: Satallite[]) {
+
       this.sourceList = [
         new Satallite("SiriusXM", "Communication", "2009-03-21", "LOW", true),
         new Satallite("Cat Scanner", "Imaging", "2012-01-05", "LOW", true),
@@ -18,4 +22,5 @@
         new Satallite("ISS", "Space Station", "1998-11-20", "LOW", true),
       ]
   }
-  ]
+  
+}
