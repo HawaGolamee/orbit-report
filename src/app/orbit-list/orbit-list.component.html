@@ -9,11 +9,11 @@
       <th>Launch Date</th>
    </tr>
 
-   <tr *ngFor="let satallite of sourceList">{{ satallite}}
-   <td>{{satallite[0].Name}}</td>
-   <!-- <td>{{satallite[1]}}</td>
-   <td>{{satallite[2]}}</td>
-   <td>{{satallite[3]}}</td>
-   <td>{{satallite[4]}}</td> -->
+   <tr *ngFor="let satallite of satallites">{{ satallite}}
+   <td>{{satallite.name}}</td>
+    <td>{{satallite.type}}</td>
+   <td>{{satallite.launchData}}</td>
+   <td>{{satallite.orbitType}}</td>
+   <td>{{satallite.operational}}</td>
 </tr>
 </table>
