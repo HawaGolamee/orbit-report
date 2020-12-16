@@ -16,11 +16,11 @@
          response.json().then(function(data) {
    
             let fetchedSatellites = data.satellites;
-            let satallite = new Satallite;
+            //let satallite = new Satallite;
             // TODO: loop over satellites
            for (let i = fetchedSatellites; i < fetchedSatellites; i++){
             // TODO: create a Satellite object using 
-            new Satallite (fetchedSatellites[i].name, 
+           let satallite =  new Satallite (fetchedSatellites[i].name, 
               fetchedSatellites[i].type, 
               fetchedSatellites[i].launchDate, 
               fetchedSatellites[i].orbitType, 
