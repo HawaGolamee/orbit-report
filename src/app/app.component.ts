@@ -1,5 +1,5 @@
   import { Component } from '@angular/core';
-  import { Satellite } from './satallite';
+  import { Satellite } from './satellite';
   @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
@@ -18,7 +18,7 @@
             let fetchedSatellites = data.satellites;
             //let satallite = new Satallite;
             // TODO: loop over satellites
-           for (let i = fetchedSatellites; i < fetchedSatellites; i++){
+           for (let i = 0; i < fetchedSatellites; i++){
             // TODO: create a Satellite object using 
            let satellite =  new Satellite (fetchedSatellites[i].name, 
               fetchedSatellites[i].type, 
@@ -28,7 +28,7 @@
             // TODO: add the new Satellite object to sourceList using: 
             this.sourceList.push(satellite);
            }
-           console.log(satellite);
+           //console.log(satellite);
          }.bind(this));
       }.bind(this));
    
