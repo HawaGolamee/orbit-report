@@ -27,11 +27,12 @@
               fetchedSatellites[i].operational);
             // TODO: add the new Satellite object to sourceList using: 
             this.sourceList.push(satallite);
-   
+           }
          }.bind(this));
       }.bind(this));
    
    }
+  }
 
   //    title = 'orbit-report';
   // sourceList: Satallite[] = [
@@ -41,6 +42,6 @@
   //       new Satallite("GPS 938", "Positioning", "2001-11-01", "HIGH", true),
   //       new Satallite("ISS", "Space Station", "1998-11-20", "LOW", true),
   //     ]
-  }
+  
   
 
