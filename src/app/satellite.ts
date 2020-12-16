@@ -1,4 +1,4 @@
-    export class Satallite {
+    export class Satellite {
     name: string;
     orbitType: string;
     type: string;

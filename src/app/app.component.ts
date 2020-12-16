@@ -1,5 +1,5 @@
   import { Component } from '@angular/core';
-  import { Satallite } from './satallite';
+  import { Satellite } from './satallite';
   @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
@@ -7,7 +7,7 @@
   })
   export class AppComponent {
     title = 'orbit-report';
-  sourceList: Satallite[] 
+  sourceList: Satellite[] 
     constructor() {
       this.sourceList = [];
       let satellitesUrl = 'https://handlers.education.launchcode.org/static/satellites.json';
@@ -20,14 +20,15 @@
             // TODO: loop over satellites
            for (let i = fetchedSatellites; i < fetchedSatellites; i++){
             // TODO: create a Satellite object using 
-           let satallite =  new Satallite (fetchedSatellites[i].name, 
+           let satellite =  new Satellite (fetchedSatellites[i].name, 
               fetchedSatellites[i].type, 
               fetchedSatellites[i].launchDate, 
               fetchedSatellites[i].orbitType, 
               fetchedSatellites[i].operational);
             // TODO: add the new Satellite object to sourceList using: 
-            this.sourceList.push(satallite);
+            this.sourceList.push(satellite);
            }
+           console.log(satellite);
          }.bind(this));
       }.bind(this));
    
