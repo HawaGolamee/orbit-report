@@ -18,7 +18,7 @@
             let fetchedSatellites = data.satellites;
             
             // TODO: loop over satellites
-           for (let i = 0; i <= fetchedSatellites.length; i++){
+           for (let i = 0; i < fetchedSatellites.length; i++){
             // TODO: create a Satellite object using 
            let satellite =  new Satellite (fetchedSatellites[i].name, 
               fetchedSatellites[i].type, 
