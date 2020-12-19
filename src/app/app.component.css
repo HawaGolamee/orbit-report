@@ -11,6 +11,3 @@ button {
     font-size: 18px;
     cursor: pointer;
 }
-tr:nth-child(even) {
-    background-color: #722020;
-  }

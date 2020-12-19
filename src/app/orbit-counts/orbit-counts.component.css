@@ -1,14 +1,14 @@
-.counts {
-    background: #34495E;
-    color: #fff;
-    border-radius: 5px;
-    width: 225px;
-}
+    .counts {
+        background: #2e557c;
+        color: #fff;
+        border-radius: 5px;
+        width: 225px;
+    }
 
-.counts div {
-    padding: 8px;
-}
+    .counts div {
+        padding: 10px;
+    }
 
-.counts span {
-    float: right;
-}
+    .counts span {
+        float: right;
+    }
